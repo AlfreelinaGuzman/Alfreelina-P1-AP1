@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-//using Alfreelina_P1_AP1.UI.Registros;
+using Alfreelina_P1_AP1.UI.Registros;
 
 namespace Alfreelina_P1_AP1
 {
@@ -26,7 +26,11 @@ namespace Alfreelina_P1_AP1
             InitializeComponent();
         }
 
-        
+         private void RegistrarCiudades_Click(object sender, RoutedEventArgs e)
+        {
+            rCiudades ventana = new rCiudades();
+            ventana.Show();
+        }
     }
 
 }
