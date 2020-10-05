@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Menu Principal" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
 	<Grid>
-
 			<Menu Height = "20" VerticalAlignment="Top">
 
 				<MenuItem Header= "Registros" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Top">

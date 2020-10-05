@@ -1,0 +1,50 @@
+<Window x:Class="Alfreelina_P1_AP1.UI.Registros.rCiudades"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Alfreelina_P1_AP1.UI.Registros"
+        mc:Ignorable="d"
+        Title="Registro de Ciudades" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+	<Grid>
+		<StackPanel Orientation= "Vertical" Margin="10,10,10,10">
+
+            <StackPanel Orientation= "Horizontal">
+            <!--CiudadID-->
+            <Label Content= "CiudadID" HorizontalAlignment="Left" />
+            <TextBox x:Name= "CiudadIDTextBox" Width="100" Text= "{Binding CiudadID}" Height= "20" HorizontalAlignment= "Left"/>
+           
+            <!--Boton Buscar-->
+            <Button x:Name= "BuscarButton" Margin="10,0" Width="70" Height="30">
+             <StackPanel Orientation= "Horizontal">
+             <Image Source="/Imagenes/Buscar.png" Width="20" Height="20"/>
+             </Button>
+             </StackPanel>
+
+            <!--Nombres-->
+             <Label Content= "Nombres" HorizontalAlignment="Left" />
+            <TextBox x:Name= "NombresTextBox" Width="100" Text= "{Binding Nombres}" Height= "20" HorizontalAlignment= "Left"/>
+           
+           <!--Boton Nuevo-->
+            <Button x:Name= "NuevoButton" Margin="10,0" Width="70" Height="30">
+             <StackPanel Orientation= "Horizontal">
+             <Image Source="/Imagenes/Nuevo.png" Width="20" Height="20"/>
+             </Button>
+
+            <!--Boton Guardar-->
+            <Button x:Name= "GuardarButton" Margin="10,0" Width="70" Height="30">
+             <StackPanel Orientation= "Horizontal">
+             <Image Source="/Imagenes/Guardar.png" Width="20" Height="20"/>
+             </Button>
+
+            <!--Boton Eliminar-->
+            <Button x:Name= "EliminarButton" Margin="10,0" Width="70" Height="30">
+             <StackPanel Orientation= "Horizontal">
+             <Image Source="/Imagenes/Eliminar.png" Width="20" Height="20"/>
+             </Button>
+
+             </StackPanel>
+             </StackPanel>
+        </StackPanel>
+	</Grid>
+</Window>
