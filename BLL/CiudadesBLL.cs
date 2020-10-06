@@ -98,14 +98,13 @@ namespace Alfreelina_P1_AP1.BLL{
             return Eliminado;
         }
 
-    public static List <Ciudades> GetList(Expression<Func<Ciudades, bool>> productos)
+    public static List <Ciudades> GetList(Expression<Func<Ciudades, bool>> ciudades)
         {
             List<Ciudades> Lista = new List<Ciudades>();
             Contexto contexto = new Contexto();
-
             try
             {
-                Lista = contexto.Ciudades.Where(productos).ToList();
+                Lista = contexto.Ciudades.Where(ciudades).ToList();
             }
             catch (Exception)
             {
