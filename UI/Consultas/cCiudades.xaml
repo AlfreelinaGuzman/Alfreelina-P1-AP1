@@ -1,0 +1,33 @@
+<Window x:Class="Prestamos.UI.Consultas.cCiudades"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prestamos.UI.Consultas"
+        mc:Ignorable="d"
+        Title="Consultar Ciudades" Height="400" Width="400">
+    <Grid>
+        <StackPanel Margin= "120,20,1,1"  VerticalAlignment="Center" HorizontalAlignment="Center">
+            
+            <!--Desde-->
+            <Label Content="Desde:" Margin="130,40,0,0" ></Label>
+            <DatePicker x:Name="DesdeDatePicker" Width="170" Height="30" Margin="300,50,0,0" ></DatePicker>
+            
+            <!--Hasta-->
+            <Label Content="Hasta:" Margin="430,40,0,0" ></Label>
+            <DatePicker x:Name="HastaDatePicker" Width="170" Height="30" Margin="300,50,0,0" ></DatePicker>
+
+            <!--Boton Buscar-->
+            <Button x:Name ="BuscarButton" Margin="680,60,0,0" Width = "120" Height = "40" Content="   Buscar" />
+            <Image Source= "/Imagenes/Buscar.png" Width="30" Height= "30" Margin="610,-60,0,0"/>
+
+            <DataGrid x:Name="Consultar" Height="300" Width="700" Margin="125,10,0,0" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="CiudadesID" Binding="{Binding CiudadesID}"/>
+                        <DataGridTextColumn Header="Nombres" Binding="{Binding Nombres}"/>
+             </DataGrid.Columns>
+            </DataGrid>       
+        </StackPanel>
+        </Grid>
+</Window>

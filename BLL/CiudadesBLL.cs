@@ -19,6 +19,7 @@ namespace Alfreelina_P1_AP1.BLL{
         private static bool Existe(int id){
             bool existe;
             Contexto contexto = new Contexto();
+     
             try{
                 existe = contexto.Ciudades.Any(c => c.CiudadesID == id);
             }
@@ -33,6 +34,7 @@ namespace Alfreelina_P1_AP1.BLL{
         private static bool Insertar(Ciudades ciudades){
             bool Guardado;
             Contexto contexto = new Contexto();
+     
             try{
                 contexto.Ciudades.Add(ciudades);
                 Guardado = contexto.SaveChanges()>0;
@@ -49,6 +51,7 @@ namespace Alfreelina_P1_AP1.BLL{
         private static bool Modificar(Ciudades ciudades){
             bool Modificado;
             Contexto contexto = new Contexto();
+     
             try{
                 contexto.Entry(ciudades).State = EntityState.Modified;
                 Modificado = contexto.SaveChanges()>0;
@@ -65,6 +68,7 @@ namespace Alfreelina_P1_AP1.BLL{
       public static Ciudades Buscar(int id){
             Ciudades ciudades = new Ciudades();
             Contexto contexto = new Contexto();
+     
             try{
                 ciudades = contexto.Ciudades.Find(id);
             }
@@ -85,7 +89,6 @@ namespace Alfreelina_P1_AP1.BLL{
                 contexto.Entry(ciudades).State = EntityState.Deleted;
                 Eliminado = contexto.SaveChanges()>0;
             }
-
             catch(Exception){
                 throw;
                

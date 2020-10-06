@@ -10,11 +10,11 @@
 			<Menu Height = "20" VerticalAlignment="Top">
 
 				<MenuItem Header= "Registros" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Top">
-					<MenuItem x:Name="Registrar_Producto" Header="Registrar Producto" Click="RegistrarCiudades_Click"/>
+					<MenuItem x:Name="Registrar_Ciudades" Header="Registrar Ciudades" Click="RegistrarCiudades_Click"/>
 				</MenuItem>
 
 				<MenuItem Header= "Consultas" HorizontalAlignment="Left" Margin="90,0,0,0" VerticalAlignment="Top">
-					<MenuItem x:Name="Consultar_Producto" Header="Consultar Producto" />
+					<MenuItem x:Name="Consultar_Ciudades" Header="Consultar Ciudades" Click="ConsultarCiudades_Click"/>
 				</MenuItem>
 			</Menu>
 	

@@ -5,51 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Alfreelina_P1_AP1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Ciudades" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Registro de Ciudades" Height="250" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
 	<Grid>
+    
 		<StackPanel Orientation= "Vertical" Margin="10,10,10,10">
-
         <StackPanel Orientation= "Horizontal">
     <!--CiudadID-->
         <Label Content= "CiudadID" HorizontalAlignment="Left" />
         <TextBox x:Name= "CiudadIDTextBox" Width="100" Text= "{Binding CiudadID}" Height= "20" HorizontalAlignment= "Left"/>
            
     <!--Boton Buscar-->
-        <Button x:Name ="BuscarButton" Margin="10,0" Width = "70" Height = "30"  Click= "BuscarButton_Click" >
-        <StackPanel Orientation= "Horizontal">       
-        <Image Source= "/Imagenes/Buscar.png" Width="20" Height= "20"/>  
-        <Label Content=" Buscar"/>
-        </StackPanel>
+        <Button x:Name ="BuscarButton" Margin="10,0" Width = "70" Height = "30" Click= "BuscarButton_click" >
+             <StackPanel Orientation= "Horizontal">       
+                <Image Source= "/Imagenes/Buscar.png" Width="20" Height= "20"/>  
+                <Label Content=" Buscar"/>
+                </StackPanel>
         </Button>  
         </StackPanel>
 
     <!--Nombres-->
         <Label Content= "Nombres" HorizontalAlignment="Left" />
-        <TextBox x:Name= "NombresTextBox" Width="100" Text= "{Binding Nombres}" Height= "20" HorizontalAlignment= "Left"/>
+        <TextBox x:Name= "NombresTextBox" Width="200" Text= "{Binding Nombres}" Height= "20" HorizontalAlignment= "Left"/>
            
     <StackPanel Orientation= "Horizontal" Margin="0,10">
     <!-- Boton Nuevo-->
         <Button x:Name ="NuevoButton"  Width = "80" Height = "30" Click= "NuevoButton_Click" >
-        <StackPanel Orientation= "Horizontal">
-        <Image Source= "/Imagenes/Nuevo.png" Width="20" Height= "20"/>  
-        <Label Content=" Nuevo"/>
-        </StackPanel>
+            <StackPanel Orientation= "Horizontal">
+                <Image Source= "/Imagenes/Nuevo.png" Width="20" Height= "20"/>  
+                <Label Content=" Nuevo"/>
+                </StackPanel>
         </Button>
 
     <!-- Boton Guardar-->
-        <Button x:Name ="GuardarButton" Margin="10,0" Width = "80" Height = "30"  Click= "GuardarButton_Click" >
-        <StackPanel Orientation= "Horizontal">
-        <Image Source= "/Imagenes/Guardar.png" Width="20" Height= "20"/> 
-        <Label Content=" Guardar"/>
-        </StackPanel>
+        <Button x:Name ="GuardarButton" Margin="10,0" Width = "80" Height = "30" Click= "GuardarButton_Click" >
+            <StackPanel Orientation= "Horizontal">
+                <Image Source= "/Imagenes/Guardar.png" Width="20" Height= "20"/> 
+                <Label Content=" Guardar"/>
+                </StackPanel>
         </Button>   
 
     <!-- Boton Eliminar-->
-        <Button x:Name ="EliminarButton" Margin="0,0" Width = "80" Height = "30"  Click= "EliminarButton_Click"  >
-        <StackPanel Orientation= "Horizontal">
-        <Image Source= "/Imagenes/Eliminar.png" Width="20" Height= "20"/>  
-        <Label Content=" Eliminar"/>
-        </StackPanel>
+        <Button x:Name ="EliminarButton" Margin="0,0" Width = "80" Height = "30" Click= "EliminarButton_Click" >
+            <StackPanel Orientation= "Horizontal">
+                <Image Source= "/Imagenes/Eliminar.png" Width="20" Height= "20"/>  
+                <Label Content=" Eliminar"/>
+                </StackPanel>
         </Button>  
             </StackPanel>
         </StackPanel>

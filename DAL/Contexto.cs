@@ -10,7 +10,7 @@ namespace Alfreelina_P1_AP1.DAL{
 
      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source =DATA/Productos.db");
+            optionsBuilder.UseSqlite(@"Data Source =DATA/Ciudades.db");
         }
  }
 }
